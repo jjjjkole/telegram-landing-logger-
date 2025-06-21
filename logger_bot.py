@@ -1,9 +1,11 @@
 
 from flask import Flask, request
+from flask_cors import CORS
 import requests
 from datetime import datetime
 
 app = Flask(__name__)
+CORS(app)  # Разрешаем кросс-доменные запросы
 
 BOT_TOKEN = "7796439721:AAGDOAFhAy3km1z7wyn7OHwGr6wlnxgxC_0"
 CHAT_ID = 5206914915
